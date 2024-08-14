@@ -10,6 +10,7 @@ public class Program {
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);		
+		Product p = new Product();
 		
 		System.out.println("Enter product data: ");
 		System.out.println("Name:");
@@ -19,10 +20,16 @@ public class Program {
 		System.out.println("Price:");
 		double price = sc.nextDouble();
 		
-		Product p = new Product(name, price);
+		p = new Product(name, price);
+		
+		p.setName("Computar"); // Usando o Set para mudar mudar sem quebrar o sistema com Encapsulamento
+		System.out.println("Name uptaded:" + p.getName()); // Usando Get para pegar o name 
+		p.setPrice(1200);
+		System.out.println("Price uptaded: " + p.getPrice());
+		
 		
 		System.out.println();
-		System.out.println("Product data: "+ p);
+		System.out.println("Product data: ");
 		
 		
 		System.out.println();
