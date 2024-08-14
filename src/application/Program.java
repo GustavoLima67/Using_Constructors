@@ -27,7 +27,6 @@ public class Program {
 		p.setPrice(1200);
 		System.out.println("Price uptaded: " + p.getPrice());
 		
-		
 		System.out.println();
 		System.out.println("Product data: ");
 		
